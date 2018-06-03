@@ -1,0 +1,9 @@
+a= "This is "
+b = "NAFISA"
+
+print(a + b)
+
+x = 10
+y = 20
+print("x" + "y")
+print(x + y)
