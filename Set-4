@@ -1,0 +1,16 @@
+groceries={'cereal','milk','onions','garlics','bread'}
+print(groceries)
+
+
+##if 'milk' in groceries:
+##       print("It's in the list")
+##else:
+##       print("It's not here")
+       
+
+x=input("Enter item :")
+
+if x in groceries:
+       print("It's in the list")
+else:
+       print("It's not here")
