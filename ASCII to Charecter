@@ -1,0 +1,12 @@
+# Program to find the ASCII value of the given character
+
+# Uncomment to take character from user
+
+ASC = input("Enter a character: ")
+
+print("The ASCII value of '" + ASC + "' is",ord(ASC))
+
+
+##N = int(input("Enter a Number: "))
+##print("The Ordinal value of '" + N + "' is",chr(N))
+
