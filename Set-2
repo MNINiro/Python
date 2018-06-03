@@ -1,0 +1,44 @@
+cities = {"Stuttgart", "Konstanz", "Freiburg"}
+
+more_cities = {"Winterthur","Schaffhausen","St. Gallen"}
+cities_backup = more_cities.copy()
+
+  it will remove cities from more_cities but not from cities_backup
+more_cities.clear()
+
+#======== difference() =======================
+##
+##x = {"a","b","c","d","e"}
+##y = {"b","c"}
+##z = {"c","d"}
+
+### x.difference(y)
+### will show only uncommon values {'a', 'd', 'e'}
+##
+### x.difference(y).difference(z)
+### will display only uncommon values {'e', 'a'}
+##
+### or we can write as follow:
+##x = x - y - z
+##
+
+#======== discard=======================
+
+# An element will be removed from the set,
+# if it is contained in the set. If el is not a member of the set,
+# nothing will be done.
+
+x = {"a","b","c","d","e"}
+##x.discard("a")
+##x.discard("z")
+
+
+
+#======== remove(el)=======================
+
+#works like discard(), but if el is not a member of the set,
+# a KeyError will be raised.  
+##
+##x = {"a","b","c","d","e"}
+##x.remove("a")
+##x.remove("z")
