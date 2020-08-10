@@ -1,0 +1,14 @@
+Parameter Passing
+
+"call by value" and "call by name"
+
+The most common evaluation strategy when passing arguments to a function has been call by value and call by reference: 
+
+Call by Value 
+
+The most common strategy is the call-by-value evaluation, sometimes also called pass-by-value. This strategy is used in C and C++ for example. In call-by-value, the argument expression is evaluated, and the result of this evaluation is bound to the corresponding variable in the function. So, if the expression is a variable, a local copy of its value will be used, i.e. the variable in the caller's scope will be unchanged when the function returns. 
+
+Call by Reference
+
+In call-by-reference evaluation, which is also known as pass-by-reference, a function gets an implicit reference to the argument, rather than a copy of its value. As a consequence, the function can modify the argument, i.e. the value of the variable in the caller's scope can be changed. The advantage of call-by-reference consists in the advantage of greater time- and space-efficiency, because arguments do not need to be copied. On the other hand this harbours the disadvantage that variables can be "accidentally" changed in a function call. So special care has to be taken to "protect" the values, which shouldn't be changed. 
+Many programming language support call-by-reference, like C or C++, but Perl uses it as default. 

@@ -1,0 +1,10 @@
+Car : array [l .. 100] of CarRecord;
+
+For i = 1 to 100
+	Car[i].Vehicle ID = Input Vehicle ID
+	Car[i].Registration =
+	Car[i].DateOfRegistration =  
+	Car[i].EngineSize =
+	Car[i].PurchasePrice = 	
+	Car[i].EngineSize =
+Next i

@@ -1,0 +1,9 @@
+101,Basma,basma@outlook.com,2019-10-18,True
+202,Akif,akif@gmail.com,2018-02-18,False
+303,Mahin,mahin@hotmail.com,2018-09-18,False
+404,Muhit,abu@yahoo.com,2019-10-10,True
+505,Zadida,zadida@gmail.com,2017-10-18,False
+606,samin,samin@live.com,2019-08-01,True
+822,Hamid,hamid@live.com,2019-10-01,TRUE
+555,Waasil,waasil@hotmail.com,2019-07-01,TRUE
+666,Ahyaan,ahyaan@outlook.com,2019-02-01,TRUE

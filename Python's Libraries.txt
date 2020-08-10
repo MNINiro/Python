@@ -1,0 +1,20 @@
+Python's built-in libraries for AL and Machine Learning (ML) 
+
+NumPy
+SciPy
+Pandas
+Matplotlib
+Seaborn
+Bokeh
+Plotly
+SciKit-Learn
+Theano
+TensorFlow
+Keras
+NLTK
+Gensim
+Scrapy
+Statsmodels
+Pytorch
+
+https://wiki.python.org/moin/PythonForArtificialIntelligence

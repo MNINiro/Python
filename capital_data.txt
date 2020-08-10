@@ -1,0 +1,8 @@
+USA/Washington
+AFGANISTAN/Kabul
+PAKISTAN/Islamabad
+Bangladesh/Dhaka
+Japan/Tokyo
+China/Baijing
+Qatar/Doha
+Canada/Ottowa

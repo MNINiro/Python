@@ -1,0 +1,41 @@
+Variable and Input:
+
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:01:18) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> myvar = 30
+>>> x=78
+>>> z=x+myvar
+>>> print (z)
+108
+>>> x
+78
+>>> myvar
+30
+>>> z
+108
+>>> z*x
+8424
+>>> x +10
+88
+>>> a = 2
+>>> a **3
+8
+>>> x/a
+39.0
+>>> x // a
+39
+>>> value = input("Enter the value :")
+Enter the value :50
+>>> value
+'50'
+>>> value = int (input("Enter the value: "))
+Enter the value 10
+>>> value
+10
+>>> value + x // z
+10
+>>> value = float (input("Enter the value :"))
+Enter the value :50.35
+>>> value
+50.35
+>>> 
