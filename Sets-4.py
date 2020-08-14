@@ -15,9 +15,7 @@
 #        print("It's in the list")
 # else:
 #        print("It's not here")
-
-
-
+#
 
 
 def groceryshop(a):
