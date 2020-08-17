@@ -1,5 +1,5 @@
 def gender(sex):
-
+    print(sex);
     if sex=='m':
         sex='male'
 
@@ -11,7 +11,9 @@ def gender(sex):
     print(sex)
 
 #====================
-gender('f')
-gender('m')
-gender('x')
- 
+x = input("Enter value:")
+gender(x)
+
+# gender('m')
+# gender('x')
+
