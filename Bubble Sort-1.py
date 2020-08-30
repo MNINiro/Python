@@ -11,9 +11,8 @@ def printArray(arr):
 def bubblesort(arr):
 # Declare i,j as Integer
 
-    for i in range(len(arr)):
-        for j in range(len(arr) - i - 1):
-
+    for i in range(len(arr)): # this loop is used for controlling the number of passes
+        for j in range(len(arr) - i - 1): # This loop is for actual sorting
             if arr[j] > arr[j + 1]:
                 temp = arr[j]                                             
                 arr[j] = arr[j + 1]
@@ -26,9 +25,8 @@ def bubblesort(arr):
 
         print("==============================")
 
-        
 
-arr = [25,16,10,30,5]
+arr = [40,20,60,10,50,30]
 
 print ("Initial Array :"),
 

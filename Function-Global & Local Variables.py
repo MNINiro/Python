@@ -17,7 +17,8 @@ def sum( arg1, arg2 ):
      
    total = arg1 + arg2; # Here total is local variable.
    print( "Inside the function local total : ", total)
-    
+   # total += total
+   # print(total)
    return total;
 
 ##print('Total :',total);
@@ -27,8 +28,8 @@ def sum( arg1, arg2 ):
 
 sum( 10, 20 );
 
-print('with return value :', sum(5,5)+ total)
-
-print ("Outside the function global total : ", total )
+# print('with return value :', sum(5,5)+ total)
+#
+# print ("Outside the function global total : ", total )
 
 

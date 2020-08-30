@@ -42,7 +42,7 @@ def bubblesort(arr):
 
         
 
-arr = [25,16,10,30,5]
+arr = [40,20,60,10,50,30]
 
 print ("Initial Array :"),
 

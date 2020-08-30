@@ -2,7 +2,6 @@ def binarySearch(array, key):
 
     left = 0
     right = len(array) - 1
-    
 
     res = -1
 

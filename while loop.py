@@ -1,8 +1,8 @@
-# a = 0 #initialization
-#
-# while a <= 10: # IT MUST BE TRUE
-#     print (a)
-#     a += 1         # a = a+1
+a = 0 #initialization
+
+while a <= 10: # IT MUST BE TRUE
+    print (a)
+    a += 1         # a = a+1
 
 ##=====================================
 #
