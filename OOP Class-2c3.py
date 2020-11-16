@@ -57,7 +57,6 @@ print(isinstance(mgr_1, Manager)) # isinstance and issubclass is a builtin
                                   # function. isinstance defines object of
                                   # an instance of a class
     
-
 print(isinstance(mgr_1, Developer))
 
 print(isinstance(dev_1, Developer))

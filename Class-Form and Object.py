@@ -1,7 +1,8 @@
 class A:
        i = 123
-       def __init__(self):
-              self.i = 12345
+
+       def __init__(self): #constructor
+              self.j = 12345
 
 
 ## Invoke form: just invoke data or method in the class, so i=123

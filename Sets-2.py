@@ -1,12 +1,12 @@
-# cities = {"Stuttgart", "Konstanz", "Freiburg"}
-#
-# more_cities = {"Winterthur","Schaffhausen","St. Gallen"}
-# cities_backup = more_cities.copy()
-#
-# print(cities)
-# print (more_cities)
-# print(cities_backup)
-#
+cities = {"Stuttgart", "Konstanz", "Freiburg"}
+more_cities = {"Winterthur","Schaffhausen","St. Gallen"}
+
+cities_backup = more_cities.copy()
+
+print(cities)
+print (more_cities)
+print(cities_backup)
+
 # # cities_backup = cities.copy()
 # # print(cities_backup)
 #
@@ -19,13 +19,13 @@
 #
 # x = {"a","b","c","d","e"}
 # y = {"b","c","u"}
-# z = {"c","d"}
-#
+# z = {"c","d","p"}
+
 # print(x.difference(y))
-# # # # will show only uncommon values {'a', 'd', 'e'}
-# # #
+# # # will show only uncommon values {'a', 'd', 'e'}
+# #
 # print(x.difference(y).difference(z))
-# will display only uncommon values {'e', 'a'}
+# # will display only uncommon values {'e', 'a'}
 # #
 # # or we can write as follow:
 # x = x - y - z
@@ -38,9 +38,9 @@
 # nothing will be done.
 
 # x = {"a","b","c","d","e"}
-# # x.discard("a")
-# # print(x)
-#
+# x.discard("a")
+# print(x)
+
 # x.discard("z")
 # print(x)
 
@@ -51,9 +51,9 @@
 #works like discard(), but if el is not a member of the set,
 # a KeyError will be raised.  
 
-x = {"a","b","c","d","e"}
-x.remove("a")
-print(x)
-##
-x.remove("z")
-print(x)
+# x = {"a","b","c","d","e"}
+# x.remove("a")
+# print(x)
+
+# x.remove("z")
+# print(x)

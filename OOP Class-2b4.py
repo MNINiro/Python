@@ -23,7 +23,8 @@ class Employee:
 
     @classmethod
     def from_string(cls, emp_str):
-        first, last, pay = emp_str.split('-')
+        first, last, pay = emp_str.split(' ')
+        print(first, last,pay)
         return cls(first, last, pay)
 
     @staticmethod      # @ This decorator is used when we don't need any class instances or variables
@@ -37,8 +38,11 @@ class Employee:
 emp_1 = Employee('Labib', 'Rahman', 50000)
 emp_2 = Employee('Test', 'User', 60000)
 
+# emp_str_1 = input("Enter First last and payment :")
+# print(Employee.from_string(emp_str_1))
+
 import datetime
-my_date = datetime.date(2019, 12, 16)
+my_date = datetime.date(2019, 12, 15)
 print(Employee.is_workday(my_date))
 
 

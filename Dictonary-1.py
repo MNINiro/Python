@@ -1,4 +1,5 @@
-d = {'cat': 'cute', 'dog': 'furry'}  # Create a new dictionary with some data
+d = {'cat': 'cute',
+     'dog': 'furry'}  # Create a new dictionary with some data
 
 print(d['cat'])       # Get an entry from a dictionary; prints "cute"
 print(d['dog'])

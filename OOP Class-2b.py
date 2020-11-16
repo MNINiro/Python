@@ -19,6 +19,8 @@ class Employee:
         #self.pay = int(self.pay * 1.04)
          self.pay = int(self.pay * self.raise_amount)   
 
+#-----------------------------
+
 print(Employee.num_of_emps)
 
 emp_1 = Employee('Labib', 'Rahman', 50000)

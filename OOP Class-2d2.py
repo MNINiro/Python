@@ -35,16 +35,15 @@ emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'User', 60000)
 emp_3 = Employee('Basma', 'Islam', 35000)
 
-print(emp_1 + emp_2) #adding both of the employees' salaries
+# print(emp_1 + emp_2) #adding both of the employees' salaries
+#
+# print(emp_2 + emp_3) #adding both of the employees' salaries
+#
+# print(len(emp_2))
+#
+print(emp_1 * emp_3)
 
-##print(emp_1 + emp_2 + emp_3) #adding both of the employees' salaries
 
-##print(len(emp_1))
-##
-##
-##print(emp_1 * emp_3)
-##
-##
 
 
 

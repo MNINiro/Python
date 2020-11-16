@@ -14,17 +14,17 @@ def merge(left,right):
     result.extend(right[j:])
 
     return result
+# ==============================
+def merge_sort_break(list):
+    if len(list) == 1:
+        return list
 
-def merge_sort(data):
-    if len(data) == 1:
-        return data
+    middle = len(list)//2
+    left_list = merge_sort_break(list[:middle])
+    right_list = merge_sort_break(list[middle:])
 
-    middle = len(data)//2
-    left_data = merge_sort(data[:middle])
-    right_data = merge_sort(data[middle:])
-
-    return merge(left_data,right_data)
+    return merge(left_list,right_list)
 
 
-data = [100,5,200,3,100,4,8,9] 
-print(merge_sort(data))
+list = [100,5,200,3,100,4,8,9]
+print(merge_sort_break(list))

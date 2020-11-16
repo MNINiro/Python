@@ -34,7 +34,7 @@ class LinkedList:
         node = self.head
         i = 0
 
-        while ( node != None ) and ( i < index ):
+        while (node != None ) and ( i < index ):
             prev = node
             node = node.next
             i += 1

@@ -19,8 +19,8 @@ class Employee:
    
     def __str__(self): # for more readable representation of object
         return'{}-{}'.format(self.fullname(), self.email)
-        
-    def __repr__(self): # this method mostly used for debugging and loging  
+
+    def __repr__(self): # this method mostly used for debugging and loging
         return "Employee('{}', '{}', '{}')".format(self.first, self.last, self.pay)
 
         # reprlib.repr(obj) : This is the repr() method of aRepr.
@@ -32,12 +32,10 @@ emp_1 = Employee('MNI', 'Niro', 50000)
 emp_2 = Employee('Test', 'User', 60000)
 
 
-##print(1 + 2) # addition. It uses dunder Add method from library
-##print('a' + 'b') # concate. It uses dunder Concate method from library
-##
-##
+#print(1 + 2) # addition. It uses dunder Add method from library
+#print('a' + 'b') # concate. It uses dunder Concate method from library
 print(int.__add__(1,4))
-print(str.__add__('b', 'c'))
+print(str.__add__("b","c"))
 print(int.__sub__(4,2))
 print(int.__mul__(2,4))
 print(str.__len__('Basma'))

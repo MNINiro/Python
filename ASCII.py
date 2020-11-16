@@ -1,2 +1,2 @@
-for i in range(5000):
+for i in range(15000):
     print(i,' ',chr(i))

@@ -18,10 +18,10 @@
 #
 
 
-def groceryshop(a):
+def groceryshop(a,b):
        groceries = {"cereal", "milk", "garlics", "bread"}
 
-       if a in groceries:
+       if a or b in groceries:
               print("It's in the list")
        else:
               print("It's not in the list ")
@@ -30,7 +30,12 @@ def groceryshop(a):
 #============ Main Body ==================
 
 y = input("Enter the item : ")
-groceryshop(y) #parameter passing
+# groceryshop(y) #parameter passing
+
+z = input("Enter the item : ")
+
+groceryshop(y,z) #parameter passing
+
 
 # for i in range(2):
 #        groceryshop()

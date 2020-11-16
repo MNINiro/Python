@@ -24,10 +24,8 @@ emp_2 = Employee('Test', 'User', 60000)
 Employee.raise_amount = 1.05
 print(Employee.raise_amount)
 
-
 emp_1.apply_raise()
 print(emp_1.pay)
-
 
 emp_2.apply_raise()
 print(emp_2.pay)

@@ -49,11 +49,12 @@ dev_1 = Developer('MNI', 'Niro', 50000, 'Python')
 dev_2 = Developer('Test', 'User', 60000, 'Java')
 dev_3 = Developer('Tasdeeq', 'Jawad', 60000, 'Java')
 
-##print(dev_1.fullname())
+print(dev_1.fullname())
+
 mgr_1 = Manager('Samin', 'Islam', 90000, [dev_1])   # this mgr_1 supervises dev_1.
-                                                    # It will inherit all of the 
+                                                     # It will inherit all of the
 mgr_1.print_emps() # It will print out full name of the employee that supervised by this manager
- 
+
 print(mgr_1.email)
 
 mgr_1.add_emp(dev_2)

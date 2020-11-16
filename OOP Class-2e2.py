@@ -9,7 +9,7 @@ class Employee:
         self.last = last
        # self.email = first + '.' + last + '@outlook.com'
 
-    @property       
+    @property
     def email(self):    # now email method is an attribute
         return '{}.{}@outlook.com'.format(self.first, self.last)
                       
@@ -23,18 +23,14 @@ class Employee:
         self.first = first
         self.last = last
 
-   
 emp_1 = Employee('John', 'Smith')
  
-emp_1.fullname = 'Salman Khan'  # it will show error messsage unless
-                                  # we need to use
-                                  # @fullname.setter decorators
+emp_1.fullname = 'Salman Khan'  # it will show error messsage unless we need to use @fullname.setter decorators
 
 print(emp_1.first)
 print(emp_1.email) # it will show only memory address. to solve this problem
                     # we need to use @property method
 #print(emp_1.email())
-
 
 #print(emp_1.fullname()) # same @property methos can be used before fullname
 print(emp_1.fullname)

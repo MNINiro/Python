@@ -23,7 +23,7 @@ class Employee:
                                # #Here cls is the Employee class
         
 
-
+print(Employee.raise_amt)
 Employee.set_raise_amt(1.05) #Its a classmethod
 
     # It is equal to Employee.raise_amt = 1.05

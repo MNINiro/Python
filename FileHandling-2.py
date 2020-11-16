@@ -1,11 +1,11 @@
-def WriteText(n):
-    Text = n 
-##    FileHandle = open("C:/Users/mnini/Documents/sample.txt", "w")
-    FileHandle = open("D:/sample.txt", "w")    
-    FileHandle.write(Text)
-    FileHandle.write('\n')
-    FileHandle.close()
-    return
+# def WriteText(n):
+#     Text = n
+# ##    FileHandle = open("C:/Users/mnini/Documents/sample.txt", "w")
+#     FileHandle = open("D:/sample.txt", "w")
+#     FileHandle.write(Text)
+#     FileHandle.write('\n')
+#     FileHandle.close()
+#     return
 
 
 def ReadText():
@@ -29,9 +29,7 @@ def AppendText(m):
 def MultiLineRead():
 
     FileHandle = open("D:/sample.txt", "r")
-
-    Text = FileHandle.read()
-
+    Text = FileHandle.readline()
     print(Text)
     
     while len(Text)>0:
@@ -41,14 +39,13 @@ def MultiLineRead():
     return
 
 
-##n = str(input("Enter Data: "))
-##WriteText(n)
-    
-          
+# n = str(input("Enter Data: "))
+# WriteText(n)
+
 ReadText()
 
-for i in range(2):
-    m = str(input("Enter Data:"))
-    AppendText(m)
+# for i in range(2):
+#     m = str(input("Enter Data:"))
+#     AppendText(m)
 
-MultiLineRead()
+# MultiLineRead()

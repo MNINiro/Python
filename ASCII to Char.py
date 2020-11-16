@@ -7,7 +7,7 @@ ASC = input("Enter a character: ")
 Encrypt = ord(ASC)
 print(Encrypt)
 print("The ASCII value of '" + ASC + "' is",ord(ASC))
-x = Encrypt + 2
+x = Encrypt + 2372
 print(x)
 
 y = chr(x)

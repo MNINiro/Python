@@ -27,8 +27,9 @@ def WriteText():
 def ReadText():
 
     FileHandle = open("sample.txt", "r")
-    Text = FileHandle.read()
-    print(Text)
+##    Text = FileHandle.readline()
+##    print(Text)
+    print(FileHandle.read())
     FileHandle.close()
     return
 
@@ -66,10 +67,10 @@ def MultiRead():
 
 ##WriteText()
 
+# AppendText()
+#
+##ReadText()
+
 AppendText()
-
-ReadText()
-
-##AppendText()
 ##
 MultiRead()

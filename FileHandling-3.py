@@ -1,7 +1,7 @@
 def WriteText(n):
     Text = n 
 ##    FileHandle = open("C:/Users/mnini/Documents/sample.txt", "w")
-    FileHandle = open("D:/sample.txt", "w")    
+    FileHandle = open("D:/sample.txt", "w")
     FileHandle.write(Text)
     FileHandle.write('\n')
     FileHandle.close()

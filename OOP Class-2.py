@@ -14,7 +14,7 @@ emp_2 = Employee('Test', 'User', 60000)
 
 
 print(emp_1.email)
-print(emp_2.email)
+# print(emp_2.email)
 
 ####print('{} {}'.format(emp_1.first, emp_1.last))
 print(emp_1.fullname())

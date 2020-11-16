@@ -46,31 +46,31 @@
 # # for "issuperset of" ">" is used to check if a set is a proper superset of a set.
 #
 #
-# x = {"a","b","c","d","e"}
-# y = {"c","d"}
-# z = {"a","b","c","d","e"}
-#
-# # x.issuperset(y)  will return TRUE
-# # y.issuperset(x)  will return FALSE
-#
-# print(x.issuperset(y))
-# print(y.issuperset(x))
-#
-# print()
-# print(x.issuperset(z))
-# print(z.issubset(x))
+x = {"a","b","c","d","e"}
+y = {"c","d"}
+z = {"a","b","c","d","e"}
+
+# x.issuperset(y)  will return TRUE
+# y.issuperset(x)  will return FALSE
+
+print(x.issuperset(y))
+print(z.issuperset(x))
+
+print()
+print(x.issuperset(z))
+print(z.issubset(y))
 #
 # #========== pop()===========
 #
 # # pop() removes and returns an arbitrary set element.
 # # The method raises a KeyError if the set is empty
 
-x = {"a","b","c","d","e"}
+# x = {"a","b","c","d","e"}
 
 # x.pop() will remove an element randomely
-
-print(x.pop())
-print(x)
+#
+# print(x.pop())
+# print(x)
 
 
 

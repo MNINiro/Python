@@ -1,4 +1,4 @@
-def checkdigit(lst): # [1, 5, 6, 3, 2, 7, 8,0,1 ];
+def checkdigit(lst): # [1, 5, 6, 3, 2, 7, 8,0,1,?];
 
        j = 11
        tot = 0
@@ -42,8 +42,8 @@ def checkdigitNew(lst):
        out = 10 - rmd
        print("UPC Check Digit is :",out)
 
-lstIn = [1, 5, 6, 3, 2, 7, 8,0,1 ];
-checkdigit(lstIn)
+##lstIn = [1, 5, 6, 3, 2, 7, 8,0,1 ];
+##checkdigit(lstIn)
 
 lstNew = [1, 7, 5, 3, 6, 8, 9, 5, 6, 5, 4, 0];
 ##lstNew = [9,7,8,0,4,3,5,1,8,8,9,3]
