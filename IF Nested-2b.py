@@ -1,6 +1,5 @@
 group= (input("Enter group (Student/Teacher) :"))
 
-
 if group=="Student":
         Name= (input("Enter Name :"))
         if Name=="Atif":

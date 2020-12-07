@@ -1,10 +1,10 @@
 import numpy as np
 
-##a = np.array([1, 2, 3])                         # Create a rank 1 array
-##print(type(a))                                      # Prints "<class 'numpy.ndarray'>"
-##print(a.shape)                                      # Prints "(3,)"
-##print(a[0], a[1], a[2])                             # Prints "1 2 3"
-##
+a = np.array([1, 2, 3])                         # Create a rank 1 array
+print(type(a))                                      # Prints "<class 'numpy.ndarray'>"
+print(a.shape)                                      # Prints "(3,)"
+print(a[0], a[1], a[2])                             # Prints "1 2 3"
+
 ##a[0] = 5                                                   # Change an element of the array
 ##print(a)                                                   # Prints "[5, 2, 3]"
 ##
@@ -62,18 +62,18 @@ import numpy as np
 
 #=======================
 
-nums = np.arange(1, 16)
-##print(nums[7])
-##print(nums[1:8])
+# nums = np.arange(1, 16)
+#print(nums[7])
+#print(nums[1:8])
 
-nums2 = nums[0:8]
-##print(nums2)
+#nums2 = nums[0:8]
+#print(nums2)
 
 # If you add an array with a scalar value, the value will be added to each element in the array.
 # Let's add 10 to the nums array and print the resultant array on the console. Here is how you'd do it:
 
-nums3 = nums2 + 10
-##print(nums3)
+# nums3 = nums2 + 10
+#print(nums3)
 
 #============ The log Function ===========
 #simply returns an array with the log of all elements in the input array
@@ -151,10 +151,10 @@ nums3 = nums2 + 10
 # The trace of a matrix is the sum of all the elements in the diagonal of a matrix.
 # The NumPy library contains trace function that can be used to find the trace of a matrix.
 
-X = np.array(([1,2,3], [4,5,6], [7,8,9]))
-Z = np.trace(X)
-
-print(Z)
+# X = np.array(([1,2,3], [4,5,6], [7,8,9]))
+# Z = np.trace(X)
+#
+# print(Z)
 
 
 

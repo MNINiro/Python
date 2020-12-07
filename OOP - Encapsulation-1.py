@@ -17,7 +17,7 @@ class person:
 p = person()
 
 print(p.A)    # Access public variable out of class, succeed
-##print(p.__B) # Access private variable out of class, fail
+# print(p.__B) # Access private variable out of class, fail
 
 print(p.printName()) #  Access public function but this function access
                      #  Private variable __B successfully since 

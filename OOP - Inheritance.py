@@ -11,14 +11,11 @@ class Women(Person):        # Class Person is a super class
               print('I wear skirt')
 
 
-man = Man()
-
-man.wear()
-
-man.speak()   ## Class Man inherits
+m = Man()
+m.wear()
+m.speak()   ## Class Man inherits
               ## Class Person, and invoke speak() method
               ## In Class Person
 
-Women().wear()
-
+Women().wear() #without creating instance
 Women().speak()

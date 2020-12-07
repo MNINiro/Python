@@ -23,19 +23,17 @@
 ##printStr( str = "Hello World!")
 
 #======================================
-
-
-def printinfo(name, age):
-
- "This prints a passed info into this function"
- print( "Name: ", name)
-
-
- if (int(age) > 120) or (int(age) <0):
-     print('Invalid age')
- else:
-     print( "Age ", age)
- return;
+# def printinfo(name, age):
+#
+#  "This prints a passed info into this function"
+#  print( "Name: ", name)
+#
+#
+#  if (int(age) > 120) or (int(age) <0):
+#      print('Invalid age')
+#  else:
+#      print( "Age ", age)
+#  return;
 
 #====================================
 ## Now you can call printinfo function
@@ -54,9 +52,10 @@ def printinfo(name, age):
 ##Function definition is here
 
 # def printinfo( name='Akif', age = 35 ):
-#     "This prints a passed info into this function"
+    "This prints a passed info into this function"
 #     print( "Name: ", name)
 #     print ("Age ", age)
+#     print(f'name: {name} age: {age}')
 #     return;
 
  # Now you can call printinfo function

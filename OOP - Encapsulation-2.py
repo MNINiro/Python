@@ -7,10 +7,10 @@ class C:
 
 
 C().accessible()     # Access public function
-C().inaccessible()   # Can’t access private function
+# C().inaccessible()   # Can’t access private function
 
 
-##C()._C__inaccesssible() # Access private function via changed name
+C()._C__inaccesssible() # Access private function via changed name
 
 
 

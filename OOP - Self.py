@@ -1,8 +1,8 @@
 class Person:
 
-       # “Self” in Python works as a variable of function
-       # but it won’t invoke data.
+       # “Self” in Python works as a variable of function but it won’t invoke data.
        # In Python, functions in class access data via “self”
+       # self is a default variable that contains the memory location of the current object.
 
        
        def __init__(self,name):
