@@ -1,0 +1,5 @@
+print('welcome to \nthis world')
+print('welcome to \tthis world')
+print('welcome to "this world"')
+print("welcome to 'this world'")
+print('welcome to \'this world\'')
