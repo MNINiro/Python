@@ -1,14 +1,11 @@
 # the item numbers, buyer numbers and item descriptions are predefined
-
-itemNumber = [ 534, 296, 339, 112, 354, 399, 612, 786, 451, 487]
-reservedPrice = [ 10, 15, 25, 17, 30, 12, 22, 34, 28, 40]
+itemNumber = [534, 296, 339, 112, 354, 399, 612, 786, 451, 487]
+reservedPrice = [10, 15, 25, 17, 30, 12, 22, 34, 28, 40]
 description = [ 'a', 'b', 'c', 'd', 'e' ]
-buyerNumber = [ 1054, 1063, 1042 ]
+buyerNumber = [1054, 1063, 1042]
 numberOfBids = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 highestBid = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 totalPrice = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-
 inputNewBid = 0
 inputBuyerNumber = 0
 inputItemNumber = 0
@@ -21,22 +18,17 @@ itemsNoBids = 0
 
 while auctionStatus == True:
     inputItemNumber = input("\n\nEnter an Item Number to search: ")
-
     while itemValidity == False:
         for i in itemNumber:
             if int(inputItemNumber) == i:
                 itemValidity = True
-
         if itemValidity == False:
             inputItemNumber = input("Invalid Item Number. Try again: ")
 
-
     index = itemNumber.index(int(inputItemNumber))
-
-    print("\n\tItem Number: ", inputItemNumber, 
+    print("\n\tItem Number: ", inputItemNumber,
           "\n\tDescription: ", description[index],
           "\n\tHighest Bid: ", highestBid[index])
-
 
     inputBuyerNumber = input("\nEnter Buyer Number to bid: ")
 
@@ -58,7 +50,6 @@ while auctionStatus == True:
     decision = input("\nPress Enter to bid again. (Enter 'e' to end the auction): ")
     if decision == "e":
         auctionStatus = False
-
 
 count = 0
 while count < len(itemNumber):

@@ -22,9 +22,8 @@ for row in range (3):
        c.append ([])
 
        for col in range (3):
-              c[row].append (0)
+              c[row].append(0)
 
               for aux in range (3):
                      c[row][col] +=  a[row][aux] * b[col][aux]
- 
-print (c)
+                     print (c)

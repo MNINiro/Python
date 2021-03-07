@@ -6,8 +6,6 @@ def printArray(arr):
     
     # The method join() returns a string in which the string elements of sequence
     # have been joined by str separator.
-    
-
 def bubblesort(arr):
 # Declare i,j as Integer
 
@@ -40,12 +38,7 @@ def bubblesort(arr):
 
         print("==============================")
 
-        
-
 arr = [40,20,60,10,50,30]
-
 print ("Initial Array :"),
-
 printArray(arr)
-
 bubblesort(arr)

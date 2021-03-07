@@ -1,9 +1,9 @@
 from array import *
 
 studentRoll = array('i',[101,102,103,104,105])
-print("Position of element in the array is",studentRoll.index(103)) #it will return the position of the array
+print("Position of the element in the array is",studentRoll.index(103)) #it will return the position of the array
 
-print("==== reverse method in array ====")
+print("==== Elements in the array ====")
 
 ln = len(studentRoll)
 i = 0

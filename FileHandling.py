@@ -4,7 +4,7 @@
 # 'a' : use for appending to a file
 # 'r+' : use for reading and writing to the same file
 
-Txt = "1 2 3 4 5 \n"
+Txt1 = "1 2 3 4 5 \n"
 Txt2 = "6 7 8 9 10 \n"
 Txt3 = "11 12 13 14 15 \n"
 Txt4 = "16 17 18 19 20 \n"
@@ -16,28 +16,22 @@ Txt9 = "41 42 43 44 45 \n"
 Txt10 = "46 47 48 49 50 \n"
 
 def WriteText():
-    
-    FileHandle = open("sample.txt", "w")
-    FileHandle.write(Txt)
+    FileHandle = open("E:\sample.txt", "w")
+    FileHandle.write(Txt1)
     FileHandle.write(Txt2)
     FileHandle.close()
     return
 
-
 def ReadText():
-
-    FileHandle = open("sample.txt", "r")
-##    Text = FileHandle.readline()
-##    print(Text)
-    print(FileHandle.read())
+    FileHandle = open("E:\sample.txt", "r")
+    Text = FileHandle.readline()
+    # Text = FileHandle.read()
+    print(Text)
     FileHandle.close()
     return
 
-
 def AppendText():
-
-    FileHandle = open("sample.txt", "a")
-    
+    FileHandle = open("E:\sample.txt", "a")
     FileHandle.write(Txt3)
     FileHandle.write(Txt4)
     FileHandle.write(Txt5)
@@ -49,28 +43,18 @@ def AppendText():
     FileHandle.close()
     return
 
-
 def MultiRead():
-
-    FileHandle = open("sample.txt", "r")
+    FileHandle = open("E:\sample.txt", "r")
     Text = FileHandle.readline()
     print(Text)
-    
     while len(Text)>0:
         Text = FileHandle.readline()
         print(Text)
-        
     FileHandle.close()
-    
     return
 
-
-##WriteText()
-
+# WriteText()
+# ReadText()
 # AppendText()
-#
-##ReadText()
-
-AppendText()
-##
+# ReadText()
 MultiRead()

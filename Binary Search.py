@@ -1,29 +1,25 @@
-def binarySearch(array, key):
-
+def binarySearch(array, SearchValue):
     left = 0
     right = len(array) - 1
+    found = False
 
-    res = -1
-
-    while left <= right and res == -1:
+    while left <= right and found == False:
         mid = (left + right) // 2
 
-        if array[mid] == key:
-            res = mid
+        if array[mid] == searchValue:
+            found = mid
         else:
-            if array[mid] > key:
+            if array[mid] > searchValue:
                 right = mid - 1
             else:
                 left = mid + 1
-
-    return res
-
+    return found
 
 if __name__ == '__main__':
-    arr = [1, 5, 6, 9, 10, 12, 14, 16, 20]
-    k = int(input("Enter item to search:"))
-    pos = binarySearch(arr, k)
-    if (pos == -1):
-        print("Key not found")
+    arr = [2, 5, 3, 12, 16, 23, 38, 56, 72, 91]
+    searchValue = int(input("Enter item to search:"))
+    pos = binarySearch(arr, searchValue)
+    if (pos == False):
+        print("Data not found")
     else:
-        print("Key found at position %d" % (pos))
+        print("Data found at position %d" % (pos))

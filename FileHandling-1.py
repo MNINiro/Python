@@ -29,7 +29,6 @@ def MultiRead():
     FileHandle = open("sample.txt", "r")
     Text = FileHandle.readline()
     print(Text)
-    
     while len(Text)>0:
         Text = FileHandle.readline()
         print(Text)
@@ -39,7 +38,6 @@ def MultiRead():
 p = str(input("Enter Data:"))
 WriteText(p)
 
-          
 ReadText()
 
 for i in range(5):

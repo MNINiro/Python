@@ -7,33 +7,33 @@
 # function.
 
 #===Ex-1===without decor
-def decor(func): #2, directly go to return
-    def inner(): #4
-        print("Inner function: Before enhancing") #5
-        func() #6, here func = num, so control will be given to num
-        print("Inner function: After enhancing") #10, after num, code will return control here
-    return inner() #3, now calling inner after visiting result
-
-def num(): #7, now num will execute
-    print("We will use this function") #8
-    print("and will enhance this with decorator") #9
-
-result = decor(num) #1 calling decor and passing num to func, #7 func=num, therefore, result = num
-
-# #===Ex-2===with decor
-# def decor(num): #2
+# def decor(func): #2, directly go to return
 #     def inner(): #4
-#         print("IF: Before enhancing") #5
-#         num() #6
-#         print("IF: After enhancing") #10
-#     return inner() #3
+#         print("Inner function: Before enhancing") #5
+#         func() #6, here func = num, so control will be given to num
+#         print("Inner function: After enhancing") #10, after num, code will return control here
+#     return inner() #3, now calling inner after visiting result
 #
-# @decor
-# def num(): #7
+# def num(): #7, now num will execute
 #     print("We will use this function") #8
 #     print("and will enhance this with decorator") #9
 #
-# num #1
+# result = decor(num) #1 calling decor and passing num to func, #7 func=num, therefore, result = num
+
+# #===Ex-2===with decor
+def decor(num): #2
+    def inner(): #4
+        print("IF: Before enhancing") #5
+        num() #6
+        print("IF: After enhancing") #10
+    return inner() #3
+
+@decor
+def num(): #7
+    print("We will use this function") #8
+    print("and will enhance this with decorator") #9
+
+num #1
 
 # #===Ex-3===without decor
 # def decor(fun): #2

@@ -4,7 +4,7 @@
 
 # Function definition is here
 
-def printinfo( arg1, *vartuple ):
+def printinfo(arg1, *vartuple):
 
    "This prints a variable passed arguments"
 
@@ -21,25 +21,13 @@ def printinfo( arg1, *vartuple ):
    return;
 
 #Now you can call printinfo function
-
-printinfo( 10 )
-printinfo( 70, 60, 50,40 )
+printinfo(10)
+printinfo(70,60,50,40)
 
 
 #==========================================================
 
 
-#The syntax of lambda functions contains only a single statement,
-#which is as follows 
 
-#Function definition is here
-
-sum = lambda arg1, arg2: arg1 + arg2;
-
-
-
-# Now you can call sum as a function
-print( "Value of total : ", sum( 10, 20 ))
-print ("Value of total : ", sum( 50, 50 ))
 
 
