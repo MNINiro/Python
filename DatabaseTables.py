@@ -1,8 +1,6 @@
 # Insert Operation
 # Following Python program shows how to create records in the COMPANY table created in the above example.
-
 import sqlite3
-
 conn = sqlite3.connect('D:/test.db')
 print("Opened database successfully")
 

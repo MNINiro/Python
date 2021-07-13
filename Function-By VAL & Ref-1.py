@@ -5,23 +5,22 @@
 # Function definition is here
 
 def printinfo(arg1, *vartuple):
-
    "This prints a variable passed arguments"
-
-   print( "Output is: ")
-   print (arg1)
-   print (vartuple)
-   print (arg1, vartuple)
-
+   # print( "Output is: ")
+   # print (arg1)
+   # print (vartuple)
+   # print (arg1, vartuple)
+   #
    total = arg1
+   print(arg1)
    for i in vartuple:
       print(i)
-      total += i
-      print('Total :',total)
+      # total += i
+      # print('Total :',total)
    return;
 
 #Now you can call printinfo function
-printinfo(10)
+# printinfo(10)
 printinfo(70,60,50,40)
 
 

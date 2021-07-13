@@ -1,14 +1,13 @@
 import array as ar
 
 print('========= example-1 === for Loop ==========')
-
 studentRoll = ar.array('i',[101,102,103,104,105]) # 'i' for integer
 
 for x in studentRoll: #does not need to define length of the array/list etc.
     print(x)    #to read data directly
 
-print('========= example-2 === for Loop ==========')
 
+print('========= example-2 === for Loop ==========')
 ln = len(studentRoll)
 for y in range(ln):
     print('in',y, 'position:', studentRoll[y]) #to read data from a certain position

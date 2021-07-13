@@ -1,19 +1,16 @@
-list = [52, 15, 62, 84, 68, 44]
-
-
-def forloop(searchItem):
+def forloop(list,searchItem):
     found = 0  # initially it is false
 
     for i in range(len(list)):
         if searchItem == list[i]:
             found = 1
             print('item found', searchItem, 'in position:', i)
-
     if found == 0:
         print('item not found')
 
+# ============================
 
-def whileloop(searchItem):
+def whileloop(list, searchItem):
     found = 0  # initially it is false
     i = 0
     while i < (len(list)):
@@ -26,8 +23,9 @@ def whileloop(searchItem):
     if found == 0:
         print('item not found')
 
+# ===== Main body =====
+lst = [52, 15, 62, 84, 68, 44]
+src = int(input('enter a number:'))
 
-searchItem = int(input('enter a number:'))
-
-forloop(searchItem)
-whileloop(searchItem)
+# forloop(lst,src)
+whileloop(lst,src)

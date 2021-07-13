@@ -54,7 +54,7 @@ def MultiRead():
     return
 
 # WriteText()
-# ReadText()
+ReadText()
 # AppendText()
 # ReadText()
-MultiRead()
+# MultiRead()

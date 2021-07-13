@@ -9,15 +9,16 @@ def inc(n):
 result = map(inc,a)
 print(result) #it will show memory location
 print(type(result))
+
 for i in result:
     print(i)
 
 # #=== Ex-2 ===
-result = list(map(lambda n: n+2, a))
-print(result)
-print(type(result))
-for i in result:
-    print(i)
+# result = list(map(lambda n: n+2, a))
+# print(result)
+# print(type(result))
+# for i in result:
+#     print(i)
 
 # # #=== Ex-3 ===
 # result = list(map(lambda n,m: n+m, a,b)) #a and b will pass values to n and m respectively

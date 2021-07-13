@@ -9,7 +9,6 @@ classmates = {
 
 print()
 print(classmates.items())
-
 print()
 
 for key, val in classmates.items():

@@ -1,9 +1,10 @@
-a=10
-b=15
-print('Add:',a+b)
-print('Sub:',b-a)
-print('Mul:',a*b)
-print('Floating Div:',a/b)
-print('Integer Div:',a//b)
+a = 10                      #variable
+b = 15                      #variable
+print("Add:",a+b)           #addition
+print('Sub:',b-a)           #subtraction
+print('Mult:',a*b)          #Multiplication
+print('Floating Div:',a/b)  #Division
+print('Integer Div:',a//b)  #Integer Division
 
 
+print("Hello 'world'")

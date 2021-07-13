@@ -1,7 +1,8 @@
 #===Examle-1====
 # import calendar
 #
-# # print(calendar.month(2021, 10))
+# print(calendar.month(2021, 7))
+#
 # cal = calendar.month(2021, 10)
 # print("Here is the calendar:")
 # print(cal)
@@ -27,43 +28,43 @@
 #
 # stobj = localtime()
 # print(stobj)
-# print(stobj.tm_mday)
-# print(stobj.tm_year)
-# print(stobj.tm_mon)
-# print(stobj.tm_hour)
-# print(stobj.tm_min)
-# print(stobj.tm_sec)
+# print('Day of the month:',stobj.tm_mday)
+# print('Year:',stobj.tm_year)
+# print('Month:',stobj.tm_mon)
+# print('Hour:',stobj.tm_hour)
+# print('Minutes:',stobj.tm_min)
+# print('Seconds:',stobj.tm_sec)
 
 # ===Examle-5====
 from datetime import datetime
-# dt1 = datetime(year=2021, month=1, day=20)
-# dt2 = datetime(month=3, year=2020, day=24)
-# dt3 = datetime(2014, 5, 5)
-# dt4 = datetime(2016, 5, 5,10,30)
-# print(dt1)
-# print(dt2)
-# print(dt3)
-# print(dt4)
+dt1 = datetime(year=2021, month=1, day=20)
+dt2 = datetime(month=3, year=2020, day=24)
+dt3 = datetime(2014, 5, 5)
+dt4 = datetime(2016, 5, 5,10,30,25)
+print(dt1)
+print(dt2)
+print(dt3)
+print(dt4)
 #============================
-# dtY = int(input('Enter Year:'))
-# dtM = int(input('Enter Month:'))
-# dtD = int(input('Enter Day:'))
-# ddate = datetime(dtY,dtM,dtD)
-# print(ddate)
-#
-# print(ddate.year)
-# print(dt1.month)
-# print(dt1.day)
+dtY = int(input('Enter Year:'))
+dtM = int(input('Enter Month:'))
+dtD = int(input('Enter Day:'))
+ddate = datetime(dtY,dtM,dtD)
+print(ddate)
 
-# ct=datetime.now()
-# print(ct)
-# print(ct.year)
+print(ddate.year)
+print(dt1.month)
+print(dt1.day)
+
+ct=datetime.now()
+print(ct)
+print(ct.year)
 
 # ===Examle-6====
-from datetime import time
-t1 = time(hour=20, minute=1, second=20)
-t2 = time(11, 15, 55)
-print(t1.hour)
-print(t1.minute)
-print(t1.second)
-print(t2)
+# from datetime import time
+# t1 = time(hour=20, minute=1, second=20)
+# t2 = time(11, 15, 55)
+# print(t1.hour)
+# print(t1.minute)
+# print(t1.second)
+# print(t2)

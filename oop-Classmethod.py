@@ -1,23 +1,32 @@
-class Date(object):
+# === Ex-1 ===
+# class Mobile:
+#     @classmethod
+#     def showModel(cls):
+#         print('iPhone')
+#
+# Mobile.showModel()  #Perfect way to use classmethod. calling class method
+##=== alternate way===
+# x = Mobile            # creating instance then call (not the perfect way for classmethod
+# x.showModel()         #we should use instance method instead of class method
 
-    def __init__(self, day=0, month=0, year=0):
-        self.day = day
-        self.month = month
-        self.year = year
+# #=== Ex-2 === Following example is the right way to use classmethod
+# class Mobile1:
+#     fp = 'Yes'
+#
+#     @classmethod
+#     def showModel(cls):
+#         print('Finger Print:',cls.fp) #accessing to the class variable
+#
+# Mobile1.showModel()
+
+# #=== Ex-3 === Following example is the right way to use classmethod
+class Mobile1:
+    fp = 'Yes'
 
     @classmethod
-    def from_string(cls, date_as_string):
-        day, month, year = map(int, date_as_string.split('-'))
-        date1 = cls(day, month, year)
-        return date1
+    def showModel(cls,r):
+        cls.storage = r
+        print('Finger Print:',cls.fp) #accessing to the class variable
+        print('Storage:',cls.storage)
 
-    @staticmethod
-    def is_date_valid(date_as_string):
-        day, month, year = map(int, date_as_string.split('-'))
-        return day <= 31 and month <= 12 and year <= 3999
-
-date2 = Date.from_string('11-09-2012')
-is_date = Date.is_date_valid('11-09-2012')
-
-
-print(is_date)
+Mobile1.showModel('256GB')
