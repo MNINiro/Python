@@ -1,5 +1,4 @@
 class Employee:
-
     raise_amount = 1.04
     
     def __init__(self, first, last, pay):
@@ -17,32 +16,31 @@ class Employee:
 
 emp_1 = Employee('Tasnim', 'Ahmed', 50000)
 emp_2 = Employee('Test', 'User', 60000)
-
 #---------
-# print(Employee.raise_amount)
-# print(emp_1.raise_amount)
-# print(emp_2.raise_amount)
-#
-# print(emp_1.pay)
-#
-# emp_1.apply_raise()
-# print(emp_1.pay)
+print(Employee.raise_amount)
+print(emp_1.raise_amount)
+print(emp_2.raise_amount)
+
+print(emp_1.pay)
+
+emp_1.apply_raise()
+print(emp_1.pay)
 
 #-----------
 ##print(Employee.__dict__)
 
-Employee.raise_amount = 1.05
-print(Employee.raise_amount)
-# print(emp_1.raise_amount)
-# print(emp_2.raise_amount)
-
-print(emp_1.pay)
-emp_1.apply_raise()
-print(emp_1.pay)
-
-Employee.raise_amount = 1.10
-emp_2.apply_raise()
-print(emp_2.pay)
+# Employee.raise_amount = 1.05
+# print(Employee.raise_amount)
+# # print(emp_1.raise_amount)
+# # print(emp_2.raise_amount)
+#
+# print(emp_1.pay)
+# emp_1.apply_raise()
+# print(emp_1.pay)
+#
+# Employee.raise_amount = 1.10
+# emp_2.apply_raise()
+# print(emp_2.pay)
 #-------------
 
 

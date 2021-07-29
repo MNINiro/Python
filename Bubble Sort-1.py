@@ -20,7 +20,7 @@ def bubblesort(arr):
         printArray(arr)
         print("==============================")
 
-arr = [40,20,60,10,50,30]
+arr = [7,6,2,1,5]
 print ("Initial Array :"),
-printArray(arr)
+# printArray(arr)
 bubblesort(arr)
