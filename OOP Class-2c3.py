@@ -65,6 +65,10 @@ print(issubclass(Manager, Employee))
 
 print(issubclass(Manager, Developer))
 
+print(issubclass(Developer,Manager))
+
+
+
 
 
 

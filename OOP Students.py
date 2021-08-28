@@ -13,14 +13,13 @@ class Student:
     def getQPoints(self):
         return self.qpoints
 
+    @property
     def gpa(self):
         return self.qpoints/self.hours
 
-
 aStudent = Student("Adams, Henry", 127, 228)
-
 
 print ("Name     :", aStudent.getName())
 print ("Hours    :", aStudent.getHours())
 print ("Q Points :", aStudent.getQPoints())
-print ("GPA      :", aStudent.gpa())
+print ("GPA      :", aStudent.gpa)

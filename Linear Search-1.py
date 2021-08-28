@@ -11,16 +11,16 @@ def forloop(list,searchItem):
 # ============================
 
 def whileloop(list, searchItem):
-    found = 0  # initially it is false
+    found = False  # initially it is false
     i = 0
     while i < (len(list)):
         if searchItem == list[i]:
-            found = 1
+            found = True
             print("Item found", searchItem, "in position:", i)
             break;
         i = i + 1
 
-    if found == 0:
+    if found == False:
         print('item not found')
 
 # ===== Main body =====

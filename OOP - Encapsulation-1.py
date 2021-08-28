@@ -11,7 +11,7 @@ class person:
 
     def printName(self):
         print (self.A)
-        print (self.__B) # Invoke private variable in class
+        print (self.__B) # Invoke private variable in a public function to access to that variable
         print (self.A + self.__B)
         
 p = person()

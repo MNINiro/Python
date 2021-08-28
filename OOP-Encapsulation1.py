@@ -27,8 +27,8 @@ class official(Member):
 
 AJAWrestler = Competitor("Natale", "Beyaris", "31/05/2001" , "Female", "Wrestler")
 print(AJAWrestler.IntroductionB())
-
 print()
+
 BMXJudge = official("Samantha", "Fairchild", "09/05/2009", "Female", "True", "Judge")
 print(BMXJudge.IntoductionA())
 print(BMXJudge.DisplayFullnameAndDOB())

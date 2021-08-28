@@ -17,11 +17,13 @@ class Employee:
 
 class Developer(Employee):      # its a sub class
     raise_amt = 1.10
-    def __init__(self, first, last, pay, prog_lang):
-        super().__init__(first, last, pay) # it will inherit from its super class Employee
-                    # or we can write
-                    # Employee.__init__(self, first, last, pay)
+
+    def __init__(self, first, last, pay, prog_lang, experience):
+        # Employee.__init__(self, first, last, pay)
+        # or we can write
+        super().__init__(first, last, pay)  # it will inherit from its super class Employee
         self.prog_lang = prog_lang
+        self.experience = experience
 
 class Manager(Employee):      # its a sub class
     def __init__(self, first, last, pay, employees=None): # Here None is the defult argument
@@ -45,27 +47,21 @@ class Manager(Employee):      # its a sub class
             print('-->', emp.fullname())
             
                 
-dev_1 = Developer('MNI', 'Niro', 50000, 'Python')
-dev_2 = Developer('Test', 'User', 60000, 'Java')
-dev_3 = Developer('Tasdeeq', 'Jawad', 60000, 'Java')
-
-print(dev_1.fullname())
+dev_1 = Developer('Fuad', 'Ahmed', 50000, 'Python', '3 years')
+dev_2 = Developer('MNI', 'Niro', 60000, 'Java', '5 years')
 
 mgr_1 = Manager('Samin', 'Islam', 90000, [dev_1])   # this mgr_1 supervises dev_1.
                                                      # It will inherit all of the
 mgr_1.print_emps() # It will print out full name of the employee that supervised by this manager
-
 print(mgr_1.email)
 
 mgr_1.add_emp(dev_2)
-mgr_1.add_emp(dev_3)
-
 mgr_1.print_emps()
-
-print()
-
-mgr_1.remove_emp(dev_1)
-mgr_1.print_emps()
+#
+# print()
+#
+# mgr_1.remove_emp(dev_1)
+# mgr_1.print_emps()
 
 
 

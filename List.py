@@ -8,7 +8,8 @@ list1 = ["physics", 'chemistry', 1997, 2000];
 list2 = [1, 2, 3, 4, 5, 6, 7];
 #
 print ("list1: ", list1[3])
-print ("list2: ", list2[0:7])
+print ("list2: ", list2[4:6])
+print ("list2: ", list2[-2:-1])
 # Updating Lists # uncomment following code for execution
 list = ['physics', 'chemistry', 1997, 2000];
 print ("Value available at index 2 : ")
@@ -35,3 +36,4 @@ print(list1)
 print()
 list1.append(list2)
 print(list1)
+

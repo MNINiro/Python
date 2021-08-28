@@ -7,7 +7,6 @@ class Employee:
     def __init__(self, first, last):
         self.first = first
         self.last = last
-       # self.email = first + '.' + last + '@outlook.com'
 
     def email(self):
         return '{}.{}@outlook.com'.format(self.first, self.last)

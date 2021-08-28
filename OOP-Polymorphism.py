@@ -9,15 +9,18 @@ class Animal:
         pass
 
 class Dog(Animal):
-    def Name(self):
+    def Name(self): #Method overring
         print("It's a dog")
 
-    def MakeNoise(self): # it's a overwritten method of MakeNoise method of Animal class 
+    def MakeNoise(self): # it's a overwritten method of MakeNoise method of Animal class
         print("Woof!")
 
 class Cat(Animal):
     def Name(self):
         print("It's a cat")
+
+    def Sleep(self):
+        print("it is Sleeping")
 
     def MakeNoise(self):
         print("Meaw!")
@@ -39,19 +42,19 @@ class TestAnimals:
     def MakeNoise(self,animal):
         animal.MakeNoise()
 
-TestAnimals = TestAnimals()
+TA = TestAnimals()
 dog = Dog()
 cat = Cat()
 lion = Lion()
 
-TestAnimals.PrintName(dog)
-TestAnimals.GoToSleep(dog)
-TestAnimals.MakeNoise(dog)
+# TA.PrintName(dog)
+# TA.GoToSleep(dog)
+# TA.MakeNoise(dog)
 
-TestAnimals.PrintName(cat)
-TestAnimals.GoToSleep(cat)
-TestAnimals.MakeNoise(cat)
+TA.PrintName(cat)
+TA.GoToSleep(cat)
+TA.MakeNoise(cat)
 
-TestAnimals.PrintName(lion)
-TestAnimals.GoToSleep(lion)
-TestAnimals.MakeNoise(lion)
+TA.PrintName(lion)
+TA.GoToSleep(lion)
+TA.MakeNoise(lion)

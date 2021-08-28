@@ -23,8 +23,8 @@ class Employee:
         return'{}-{}'.format(self.fullname(), self.email)
 
     def __add__(self, other):
-        return self.pay + other.pay 
-    
+        return self.pay + other.pay
+
     def __len__(self):
         return len(self.fullname())
     
@@ -35,12 +35,12 @@ emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'User', 60000)
 emp_3 = Employee('Basma', 'Islam', 35000)
 
-# print(emp_1 + emp_2) #adding both of the employees' salaries
-#
-# print(emp_2 + emp_3) #adding both of the employees' salaries
-#
-# print(len(emp_2))
-#
+# It's not a magic/dunder method
+# print(Employee.__add__(emp_1, emp_2)) #adding both of the employees' salaries
+
+# Magic methods
+print(emp_1 + emp_2) #adding both of the employees' salaries
+print(len(emp_2))
 print(emp_1 * emp_3)
 
 

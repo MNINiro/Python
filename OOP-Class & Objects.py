@@ -5,7 +5,6 @@
 #         print("ouch!")
 #         self.life -= 1
 #
-#
 #     def checkLife(self):
 #         if self.life <= 0:
 #             print("I am dead")
@@ -20,7 +19,7 @@
 #
 # enemy1.checkLife()
 #
-# ##enemy2.attack()
+# enemy2.attack()
 # enemy2.checkLife()
 
 
@@ -32,16 +31,31 @@ class Mobile:
         self.price = p
         print("Model:", self.model, "Price", self.price)
 
-realme = Mobile('RealMe X')
-realme.show_model(1000)
-print(id(realme)) #it will show memory address
+rm = Mobile('RealMe X')
+rm.show_model(10000)
+print(id(rm)) #it will show memory address
 print()
 
-redmi = Mobile('Redmi 7s')
-redmi.show_model(2006)
-print(id(redmi))
+red = Mobile('Redmi 7s')
+red.show_model(20000)
+print(id(red))
 print()
 
 geek = Mobile('Python')
 geek.show_model(49)
 print(id(geek))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

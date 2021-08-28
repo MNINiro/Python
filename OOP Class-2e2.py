@@ -1,7 +1,5 @@
 # Property Decorators - Getters, Setters, and Deleters 
-
 class Employee:
-
     raise_amt = 1.04
     
     def __init__(self, first, last):
@@ -30,9 +28,8 @@ emp_1.fullname = 'Salman Khan'  # it will show error messsage unless we need to 
 print(emp_1.first)
 print(emp_1.email) # it will show only memory address. to solve this problem
                     # we need to use @property method
-#print(emp_1.email())
-
-#print(emp_1.fullname()) # same @property methos can be used before fullname
+# print(emp_1.email())
+# print(emp_1.fullname()) # same @property methos can be used before fullname
 print(emp_1.fullname)
 
 
