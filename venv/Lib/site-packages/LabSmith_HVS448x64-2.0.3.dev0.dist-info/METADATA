@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: LabSmith-HVS448x64
+Version: 2.0.3.dev0
+Summary: Python x64 support for controlling the LabSmith HVS448
+Home-page: http://www.labsmith.com
+Author: LabSmith
+Author-email: ecummings@labsmith.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+
+#hvs448_x64
+3/5/2019 HVS448 Python support V 2.0 dev
+The python extension hvs448_x64.pyd contains Python (Windows, 3.6, 64-bit) support for controlling LabSmith HVS448 Devices.
+usage: from hvs448_x64 import *
+It contains the following objects:
+CHVS448: interface to the CHVS448. Use this to create an interface to your instrument type
+     via the appropriate method:
+hv = CHVS448.CreateHVS200V()
+hv = CHVS448.CreateHVS400V()
+hv = CHVS448.CreateHVS800V()
+hv = CHVS448.CreateHVS1500V()
+hv = CHVS448.CreateHVS3000V()
+hv = CHVS448.CreateHVS3000D()
+hv = CHVS448.CreateHVS6000D()
+hv = CHVS448.CreateHVS8000D()
+Then establish a connection to the instrument using
+hv.InitConnection(<com port number>)
+When finished, use hv.CloseConnection() to free the com port
+CHVChannel: Interface to a high-voltage channel/sequencer of the HVS
+CMaster: Interface to the master sequencer of the HVS
+
+use help(<object>) for a list of supported methods and variables.
+print(hvs448.help()) displays this list of objects
+
+

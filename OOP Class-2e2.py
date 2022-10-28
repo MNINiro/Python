@@ -15,18 +15,24 @@ class Employee:
     def fullname(self): # now fullname method is an attribute
         return '{} {}'.format(self.first, self.last)
 
-    @fullname.setter #Setter
+    @fullname.setter            #Setter
     def fullname(self, name):
-        first, last = name.split(' ')
+        first, middle, last = name.split(' ')
         self.first = first
+        self.middle = middle
         self.last = last
 
-emp_1 = Employee('John', 'Smith')
+emp_1 = Employee('John','Smith')
+print(emp_1.first)
+print(emp_1.last)
+print(emp_1.fullname)
  
-emp_1.fullname = 'Salman Khan'  # it will show error messsage unless we need to use @fullname.setter decorators
+emp_1.fullname = 'Salman mia khan'  # it will show error messsage unless we need to use @fullname.setter decorators
 
 print(emp_1.first)
-print(emp_1.email) # it will show only memory address. to solve this problem
+print(emp_1.middle)
+print(emp_1.last)
+##print(emp_1.email) # it will show only memory address. to solve this problem
                     # we need to use @property method
 # print(emp_1.email())
 # print(emp_1.fullname()) # same @property methos can be used before fullname

@@ -1,22 +1,31 @@
 #=== Ex-1 ===
-b = [10,20]
-a = [1,2,3,4,b]
-print(a)
+# b = [10,20]
+# a = [1,2,3,4,b]
+# print(a)
 
 
 # === Ex-2 ===same output
-# a = [1,2,3,4,[10,20]]
-# print('Original list:',a)
-# # print("Wrong output",a[3][1]) #it will show an error since 3rd element does not have any sublist
-# print('Valid output:',a[3])
-# print('List with a sublist:',a[4][1])
-#
+a = [11,22,33,44,[10,20]]
+print('Original list:',a)
+# print("Wrong output",a[3][1]) #it will show an error since 3rd element does not have any sublist
+print('Valid output:',a[3])
+print('List with a sublist:',a[4][1])
+
 # a.append(5)
 # print("After append:",a)
 #
 # a[4][1] = 55 #inside sublist
 # print(a)
 
+L = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+
+for list in L:
+    print(list)
+
+    total = 0
+    for number in list:
+        total += number
+    print(total)
 
 # #=== Ex-3 ===
 # c = [[10,20,30],[40,50,60]]

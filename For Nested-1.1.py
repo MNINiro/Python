@@ -1,6 +1,7 @@
+print('A\t','B')
 for A in range(1,4):
     for B in range(1,3):
-        print(A,' ',B)
+        print(A,'  ',B)
     
 
 ##a=0

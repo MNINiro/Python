@@ -16,18 +16,16 @@
 
 #====================== Writing records in a csv file =======================
 
-##import csv
-##
-##with open('employee_file.csv', mode='w') as employee_file:
-##    employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-##
-##    employee_writer.writerow(['name','department','birthday month'])
-##    employee_writer.writerow(['John Smith', 'Accounting', 'November'])
-##    employee_writer.writerow(['Erica Meyers', 'IT', 'March'])
-##
-##
-##
-##
+import csv
+
+with open('employee_file.csv', mode='w') as employee_file:
+   employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+   employee_writer.writerow(['name','department','birthday month'])
+   employee_writer.writerow(['John Smith', 'Accounting', 'November'])
+   employee_writer.writerow(['Erica Meyers', 'IT', 'March'])
+
+
 ###==================================
 ###alternate method:
 ##
@@ -63,28 +61,28 @@
 
 
 
-import csv
-
-def readMyFile(filename):
-    dates = []
-    scores = []
-
-    with open("testCSV.csv") as csvDataFile:
-        csvReader = csv.reader(csvDataFile)
-
-        for row in csvReader:
-            dates.append(row[0])
-            print(dates)
-            scores.append(row[1])
-            print(scores)
-
-    return dates, scores
-
-
-dates,scores = readMyFile('file.csv')
-
-for i in range(4):
-    print(dates[i],'|',(scores[i]))
+# import csv
+#
+# def readMyFile(filename):
+#     dates = []
+#     scores = []
+#
+#     with open("testCSV.csv") as csvDataFile:
+#         csvReader = csv.reader(csvDataFile)
+#
+#         for row in csvReader:
+#             dates.append(row[0])
+#             print(dates)
+#             scores.append(row[1])
+#             print(scores)
+#
+#     return dates, scores
+#
+#
+# dates,scores = readMyFile('file.csv')
+#
+# for i in range(4):
+#     print(dates[i],'|',(scores[i]))
 
 
 

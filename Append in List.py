@@ -1,23 +1,23 @@
 A = []
 B = []
 
-### First possibilty : using while loops
-### you need to have a counter
-##
-##X=5
-##i = 0
-##while (i < X):
-##    A.append(input('Enter value for X :'))
-##    # and increment it yourself
-##    i+=1
-##
-### you need to reset it
-##Y=5
-##i = 0
-##while (i < Y):
-##    B.append(input('Enter value for Y :'))
-##    # and increment it again
-##    i+=1
+# First possibilty : using while loops
+# you need to have a counter
+
+X=5
+i = 0
+while (i < X):
+   A.append(input('Enter value for X :'))
+   # and increment it yourself
+   i+=1
+
+# you need to reset it
+Y=5
+i = 0
+while (i < Y):
+   B.append(input('Enter value for Y :'))
+   # and increment it again
+   i+=1
 
 
 

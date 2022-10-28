@@ -15,46 +15,53 @@ Txt8 = "36 37 38 39 40 \n"
 Txt9 = "41 42 43 44 45 \n"
 Txt10 = "46 47 48 49 50 \n"
 
+
 def WriteText():
-    FileHandle = open("E:\sample.txt", "w")
+    name = input("Enter your name:")
+    FileHandle = open("sample.rtf", "w")
     FileHandle.write(Txt1)
-    FileHandle.write(Txt2)
+    FileHandle.write("Nafi\n")
+    FileHandle.write(name)
     FileHandle.close()
     return
+
 
 def ReadText():
-    FileHandle = open("E:\sample.txt", "r")
-    Text = FileHandle.readline()
-    # Text = FileHandle.read()
+    FileHandle = open("sample.rtf", "r")
+    # Text = FileHandle.readline()
+    Text = FileHandle.read()
     print(Text)
     FileHandle.close()
     return
+
 
 def AppendText():
-    FileHandle = open("E:\sample.txt", "a")
-    FileHandle.write(Txt3)
-    FileHandle.write(Txt4)
-    FileHandle.write(Txt5)
-    FileHandle.write(Txt6)
-    FileHandle.write(Txt7)
-    FileHandle.write(Txt8)
-    FileHandle.write(Txt9)
-    FileHandle.write(Txt10)
+    FileHandle = open("sample.rtf", "a")
+    FileHandle.write("Ifadee\n")
+    FileHandle.write("Ayman\n")
+    # FileHandle.write(Txt5)
+    # FileHandle.write(Txt6)
+    # FileHandle.write(Txt7)
+    # FileHandle.write(Txt8)
+    # FileHandle.write(Txt9)
+    # FileHandle.write(Txt10)
     FileHandle.close()
     return
 
+
 def MultiRead():
-    FileHandle = open("E:\sample.txt", "r")
+    FileHandle = open("sample.txt", "r")
     Text = FileHandle.readline()
     print(Text)
-    while len(Text)>0:
+    while len(Text) > 0:
         Text = FileHandle.readline()
         print(Text)
     FileHandle.close()
     return
 
-# WriteText()
-ReadText()
-# AppendText()
+
+WriteText()
 # ReadText()
+# AppendText()
+##ReadText()
 # MultiRead()

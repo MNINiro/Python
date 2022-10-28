@@ -4,10 +4,10 @@ class A:
 
 class B:
        def A(self):
-              print('I am a')
+              print('I am small a')
 
        def B(self):
-              print('I am B')
+              print('I am small B')
 
 class C(A,B):
        def C(self):
@@ -17,20 +17,20 @@ class C(A,B):
 ## so C inherit A and invoke A.A() according to the left-to-right
 ## sequence.
               
-C = C();
-C.A()
+c = C();
+c.A()
 
 ## To implement C.B(), class A does not have B() method, so
 ## C inherit B for the second priority. So C.B() actually
 ## invokes B() in class B.
-C.B()
-C.C()
+c.B()
+c.C()
 
 b = B()
 b.A()
 b.B()
-
-a = A()
-a.A()
+#
+# a = A()
+# a.A()
 
 

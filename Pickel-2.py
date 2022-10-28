@@ -7,12 +7,12 @@ data1 = {'a': [1, 2.0, 3, 4+6j],
 selfref_list = [1, 2, 3]
 selfref_list.append(selfref_list)
 
-output = open('data.pkl', 'wb')
+file = open('D:/data.pkl', 'wb')
 
 # Pickle dictionary using protocol 0.
-pickle.dump(data1, output)
+pickle.dump(data1, file)
 
 # Pickle the list using the highest protocol available.
-pickle.dump(selfref_list, output, -1)
+pickle.dump(selfref_list, file, -1)
 
-output.close()
+file.close()

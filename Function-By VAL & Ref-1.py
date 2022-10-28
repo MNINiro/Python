@@ -4,29 +4,17 @@
 
 # Function definition is here
 
-def printinfo(arg1, *vartuple):
-   "This prints a variable passed arguments"
-   # print( "Output is: ")
-   # print (arg1)
-   # print (vartuple)
-   # print (arg1, vartuple)
-   #
-   total = arg1
-   print(arg1)
-   for i in vartuple:
-      print(i)
-      # total += i
-      # print('Total :',total)
-   return;
+def printinfo(arg1, *num):
+    total = arg1
+    count = 1
 
-#Now you can call printinfo function
-# printinfo(10)
-printinfo(70,60,50,40)
+    for i in num:
+        total += i
+        count += 1
+
+    print('Total :', total)
+    print('No of items:', count)
+    return
 
 
-#==========================================================
-
-
-
-
-
+printinfo(70, 60, 50, 40)

@@ -1,11 +1,11 @@
-import pprint, pickle
+import pprint as p, pickle
 
-pkl_file = open('data.pkl', 'rb')
+file = open('D:/data.pkl', 'rb')
 
-data1 = pickle.load(pkl_file)
-pprint.pprint(data1)
+data1 = pickle.load(file)
+p.pprint(data1)
 
-data2 = pickle.load(pkl_file)
-pprint.pprint(data2)
+data2 = pickle.load(file)
+p.pprint(data2)
 
-pkl_file.close()
+file.close()

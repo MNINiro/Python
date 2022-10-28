@@ -1,0 +1,30 @@
+Case:
+A1	Compact		75.00
+A2	Tower		150.00
+
+RAM:	
+B1	8 GB	79.99
+B2	16 GB	149.99
+B3	32 GB	299.99
+
+Main Hard Disk Drive:	
+C1	1TB HDD		49.99
+C2	2TB HDD		89.99
+C3	4TB HDD		129.99
+
+Solid State Drive:	
+D1	240 GB SSD	59.99
+D2	480 GB SSD	119.99
+
+Second Hard Disk Drive:	
+E1	1TB HDD		49.99
+E2	2TB HDD		89.99
+E3	4TB HDD		129.99
+
+Optical Drive:
+F1	DVD/BIu-Ray Player	50.00
+F2	DVD/BIu-Ray Re-writer	100.00
+
+Operating System:	
+G1	Standard Version	100.00
+G2	Professional Version	175.00

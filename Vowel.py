@@ -1,13 +1,15 @@
-Stns = "I have a Dell Laptop, whats about you"
+Stns = "I have a Dell Laptop, whats about you?"
 Stns = Stns.upper()
+Stns = list(Stns)
 print(Stns)
 x = len(Stns)
-print('Charecters:',x)
+print('Charecters:', x)
 a = 0
 e = 0
 i = 0
 o = 0
 u = 0
+
 for j in range(x):
     if Stns[j] == "A":
         a += 1
@@ -24,5 +26,7 @@ print("e :",e)
 print("i :",i)
 print("o :",o)
 print("u :",u)
+
+print('No of Vowels:', a+e+i+o+u)
       
     

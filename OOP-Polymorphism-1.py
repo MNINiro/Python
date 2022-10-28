@@ -7,9 +7,12 @@ class bankAccount():
         self.__balance = self.__balance + value
         print("Now you have: ", self.__balance)
 
-    def withdraw(self,value):
-        self.__balance = self.__balance - value
-        print("Now you have: ", self.__balance)
+    def withdraw(self,value): #balance can't be -ve'
+        if value > self.__balance:
+            print("You can't withdaw more than the balance amount")
+        else:
+            self.__balance = self.__balance - value
+            print("Now you have: ", self.__balance)
 
 class currentAccount(bankAccount):
     def __init__(self,account_name = "Current Account", balance = 1500):
@@ -42,7 +45,6 @@ while True:
     print("2. Savings Account")
     print('Enter Menu Choice :')
     menu_option = int(input())
-    
 
     if menu_option == 1:
         print("1. Deposit funds")
@@ -58,11 +60,9 @@ while True:
             currentObject.withdraw(value)
         else:
             print("Wrong menu choice!")
-            
     elif menu_option == 2:
         print("1. Deposit funds")
         print("2. Withdraw funds")
-        
         submenu_option = int(input())
 
         if submenu_option == 1:

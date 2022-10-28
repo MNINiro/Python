@@ -36,10 +36,13 @@ def checkdigitNew(lst): # lst = [9,7,8,0,4,3,5,1,8,8,9,3]
        print('Remainder:',rmd)
        out = 10 - rmd
        print("UPC Check Digit is :",out)
+
 lstIn = [0,7,4,8,7,4,0,4,6];
 checkdigit(lstIn)
-lst = [9,7,8,0,4,3,5,1,8,8,9,3]
-checkdigitNew(lst)
+
+
+# lst = [9,7,8,0,4,3,5,1,8,8,9,3]
+# checkdigitNew(lst)
 
 
 

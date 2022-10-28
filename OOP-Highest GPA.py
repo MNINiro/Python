@@ -26,7 +26,7 @@ class Student:
         name, hours, qpoints = string.split(infoStr,"\t")
         return Student(name, hours, qpoints)
 
-    def main():
+    def main(self):
         filename = raw_input("Enter name the grade file: ")
         infile = open(filename, 'r')
         best = makeStudent(infile.readline())

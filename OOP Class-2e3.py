@@ -11,7 +11,7 @@ class Employee:
     def email(self):
         return '{}.{}@outlook.com'.format(self.first, self.last)
                       
-    @property
+    @property   #Getter
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
 
@@ -27,12 +27,12 @@ class Employee:
         self.first = ""
         self.last = ""
 
-emp_1 = Employee('John', 'Smith')
- 
+emp_1 = Employee('John', 'Smith') 
 emp_1.fullname = 'Salman Khan'  # it will show error messsage unless
-
                                   # we need to use
                                   # @fullname.setter decorators
+emp_2 = Employee('A', 'B')
+emp_2.fullname = 'Shabab Ahmed'
 
 print(emp_1.first)
 print(emp_1.email) # it will show only memory address. to solve this problem
@@ -42,6 +42,8 @@ print(emp_1.fullname)
 
 del emp_1.fullname
 print(emp_1.fullname)
+
+print(emp_2.fullname)
 
 
 

@@ -1,15 +1,12 @@
-group="Students"
-
-studentName = input("Enter Student Name :")
-studentName = studentName.upper()
+group = "Students"
 
 if group == "Students":
-      if studentName == "AKIF" or "TANISHA":
+      studentName = input("Enter Student Name :")
+      studentName = studentName.upper()
+
+      if (studentName == "AKIF") or (studentName == "TANISHA"):
             print ("valid student")
             print("Name of the student is",studentName)
-      # elif studentName == "TANISHA":
-      #       print ("valid student")
-      #       print("name of the student is",studentName)
       else:
             print ("Invalid Student Name")
 else:

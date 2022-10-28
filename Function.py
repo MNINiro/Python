@@ -2,32 +2,37 @@ def AddTemp():
     x = 10
     y = 12
     z = x * y
-    print('Result is',z)
+    print('Result is', z)
 
-def add(arg1, arg2):      # Add both the parameters and return them.
-    total = arg1 + arg2
-    print("Inside addition : ", total)
-    return total;
 
-def sub(arg1, arg2):      # Subtract and return them.
-    total = arg1 - arg2
-    print("Inside subtraction : ", total)
+def add(arg1, arg2):  # Add both the parameters and return them.
+    total1 = arg1 + arg2
+    print("Inside addition : ", total1)
+    return total1
 
-    x = add(4, 4) + total
-    print("Temporary:",x)
-    return total;
+
+def sub(arg1, arg2):  # Subtract and return them.
+    total2 = arg1 - arg2
+    print("Inside subtraction : ", total2)
+
+    x1 = add(4, 4)
+    x2 = x1 + total2
+    print("Temporary:", x2)
+    return total2
+
 
 # ======== Main Body ==================
 # AddTemp()
+
 # add(10,15)
 # add(20,15)
 # add(30,15)
 
 x = int(input('Enter 1st Data :'))
 y = int(input('Enter 2nd Data :'))
-add(x,y)
+# add(x, y)
 
-# sub(x,y)
+sub(x, y)
 # z = x+y
 # add(z,x)
 

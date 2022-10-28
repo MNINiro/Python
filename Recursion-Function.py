@@ -1,6 +1,6 @@
 import sys
 print("Default: ",sys.getrecursionlimit())
-sys.setrecursionlimit(2000) #we have changed default recursion limit to 2000 from 1000
+sys.setrecursionlimit(10) #we have changed default recursion limit to 2000 from 1000
 print("Modified: ",sys.getrecursionlimit())
 
 i = 0

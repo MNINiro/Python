@@ -10,16 +10,16 @@
 Team1=[12,34,52,19,54]
 Team2=[22,32,55,66,44]
 
-##a = Team1[0]
-##b = Team2[3]
-##print(a+b)
+a = Team1[0]
+b = Team2[3]
+print(a+b)
 
-##print(Team1)
-##Team1.append(33)
-##print(Team1)
+print(Team1)
+Team1.append(33)
+print(Team1)
 
 Team1[0:2] = [1,2]
 print(Team1)
 
-##Team3 = Team1.append(Team2[0:5])
-##print(Team3)
+Team3 = Team1.append(Team2[0:5])
+print(Team3)

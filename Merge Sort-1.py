@@ -24,7 +24,6 @@ def merge_sort_break(list):
     right_list = merge_sort_break(list[middle:])
 
     return merge(left_list,right_list)
-
-
+# =============================================
 list = [100,5,200,3,100,4,8,9]
 print(merge_sort_break(list))

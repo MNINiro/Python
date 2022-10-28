@@ -1,20 +1,20 @@
-# # #===Ex-1===
+#===Ex-1===
 # str = "My age is {}"
 # print(str.format(60))
 # print('my age is {}'.format(60))
-#
-# #===Ex-2===
+
+# ===Ex-2===
 # name = "Niro"
 # age = 50
-# print('My name is {} and I am {} years old'.format(name,age))
-#
-# # #===Ex-3===
+# print('My name is {} and I am {} years old'.format(name, age))
+
+# ===Ex-3===
 # a = 50
 # b = 3
 # print("{}".format(a/b))
 # print("{:.2}".format(a/b))
 # print("{:.2%}".format(a/b))
-#
+
 # #===Ex-4===
 # print("{:,}".format(1234567890)) #it will put comma after every thousands
 # print("{:_}".format(1234567890)) #it will put # after every thousands

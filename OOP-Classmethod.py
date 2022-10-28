@@ -21,7 +21,7 @@
 
 # #=== Ex-3 === Following example is the right way to use classmethod
 class Mobile1:
-    fp = 'Yes'
+    fp = 'Yes'      #class variable
 
     @classmethod
     def showModel(cls,r):

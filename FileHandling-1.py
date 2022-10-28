@@ -1,14 +1,13 @@
 def WriteText(p):
     Text = p
-    FileHandle = open("sample.txt", "w")
+    FileHandle = open("e:\sample.txt", "w")
     FileHandle.write(Text)
     FileHandle.close()
     return
 
 
 def ReadText():
-
-    FileHandle = open("sample.txt", "r")
+    FileHandle = open("e:\sample.txt", "r")
     Text = FileHandle.readline()
     print(Text)
     FileHandle.close()
@@ -17,7 +16,7 @@ def ReadText():
 
 def AppendText(m):
     Text2 = m
-    FileHandle = open("sample.txt", "a")
+    FileHandle = open("e:\sample.txt", "a")
     FileHandle.write("\n")
     FileHandle.write(Text2)
     FileHandle.close()
@@ -26,9 +25,10 @@ def AppendText(m):
 
 def MultiRead():
 
-    FileHandle = open("sample.txt", "r")
+    FileHandle = open("e:\sample.txt", "r")
     Text = FileHandle.readline()
     print(Text)
+
     while len(Text)>0:
         Text = FileHandle.readline()
         print(Text)
@@ -36,13 +36,13 @@ def MultiRead():
     return
 
 p = str(input("Enter Data:"))
-WriteText(p)
+# WriteText(p)
 
-ReadText()
+# ReadText()
 
 for i in range(5):
     m = str(input("Enter Data:"))
     AppendText(m)
 ##    AppendText("\n")
 
-MultiRead()
+# MultiRead()
