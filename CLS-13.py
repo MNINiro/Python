@@ -1,4 +1,4 @@
-# Import everything required from the tkinter module
+ # Import everything required from the tkinter module
 
 from tkinter import *
 # Function called by clicking my_button:

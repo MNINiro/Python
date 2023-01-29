@@ -1,5 +1,5 @@
-# lst = [23, 4.6, 's', '*', "Sun"]
-# print(lst)
+lst = [23, 4.6, 's', '*', "Sun"]
+print(lst)
 # print(lst[4])
 # print(type(lst))
 
@@ -8,16 +8,21 @@
 # lst.append(x)
 # lst.append(y)
 # print(lst)
+
+# lst[3]='Arko'
+# print(lst)
 # print()
+
 
 # animals = ['cat', 'dog', 'rabbit']
 # wild_animals = ['tiger', 'fox']
-#
 # water_animal = ['Whale', 'Shark']
 
 # animals.append(wild_animals)
 # print('Updated animals list: ', animals)
-#
+# print(animals[3][0])
+# print(animals.extend(water_animal))
+# print()
 # wild_animals.extend(water_animal)
 # print('Updated animals list: ', wild_animals)
 # print(animals)
@@ -36,35 +41,36 @@ print(tup)
 # x = tup + tup1
 # print(x)
 
-del tup[1]
-print(tup)
+# del tup[1]
+# print(tup)
 
 #
-# st = {23, 4.6, 's', '*', "Sun"}
-# print(st)
+st = {23, 4.6, 's', '*', "Sun"}
+print(st)
 # print(type(st))
 # print()
-#
-# import array as a
-#
-# arr = a.array('i', [1, 4, 78, 3])
-# print(arr)
-# print([2])
-# print(type(arr))
+
+
+import array
+
+arr = array.array('i', [1, 4, 78, 3])
+print(arr)
+print(arr[2])
+print(type(arr))
 
 # ======= Dictionary ==========
 
-# Classmates = {
-#     'Monajjee': 'Is very decent',
-#     'Muntahi': 'Likes Car',
-#     'Sarhan': 'is a student'
-# }
-#
-# # print(Classmates.items())
-#
-# for key, value in Classmates.items():
-#     print(key, value)
+Classmates = {
+    'Monajjee': 'Is very decent',
+    'Muntahi': 'Likes Car',
+    'Sarhan': 'is a student'
+}
+print()
+print("=======Dictionary========")
+# print(Classmates.items())
 
+for key, value in Classmates.items():
+    print(key, value)
 
 
 

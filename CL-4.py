@@ -4,8 +4,8 @@ numbers = [101,102,103,104]
 # print(numbers[2])
 # print(numbers[3])
 
-# add = numbers[0] + numbers[1]
-# print("addition:",add)
+add = numbers[0] + numbers[1]
+print("addition:",add)
 #
 # rem = numbers[2] % numbers[1]
 # print('Remainder:',rem)

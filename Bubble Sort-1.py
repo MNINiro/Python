@@ -25,9 +25,26 @@ def bubblesort(arr):
 
 
 a = [5, 1, 4, 2, 8]
-
-
 print("Initial Array :"),
 bubblesort(a)
 
 # printArray(arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

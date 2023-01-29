@@ -24,4 +24,7 @@ def popStack(stack):
 
 stack = [10, 25, 19, 75, 5]
 pushStack(stack, 55)
-popStack(stack)
+print()
+
+for i in range(5):
+    popStack(stack)

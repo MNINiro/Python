@@ -5,5 +5,5 @@ def division(firstNumber, secondNumber):
     except:
         print('Divide by zero')
 
-division(12, 3)
+# division(12, 3)
 division(10, 0)

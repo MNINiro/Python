@@ -1,16 +1,16 @@
 # String slicing
 
-fName = 'MarziA'
-lName = "Diba"
+fName = 'Tayif'
+lName = "Ahmed"
 
 # print(fName)
 # print(lName)
 # print(fName, lName)
 
-# print(fName[-2:-1])
+# print(fName[1:3])
 
-Num = '001'
-print(fName[:2]+lName[-2:]+Num)
+# Num = '001'
+# print(fName[:2] + lName[-2:] + Num)
 
 # print(fName[-6])
 

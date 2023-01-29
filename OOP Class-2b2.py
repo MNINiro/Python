@@ -28,7 +28,7 @@ emp_str_1 = 'Tasdeeq Jawad 70000'
 emp_str_2 = 'Tanjeel-Rahman-30000'
 emp_str_3 = 'Samin.Islam.90000'
 
-first, last, pay = emp_str_1.split(' ') # It's an alternative constructor
+first, last, pay = emp_str_3.split('.') # It's an alternative constructor
 
 new_emp_1 = Employee(first, last, pay) #It has been created by the previous line
 print(new_emp_1.first)

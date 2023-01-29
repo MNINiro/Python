@@ -32,9 +32,11 @@ class Node:
                 return None
         return self.item
 
+
 tree = Node(27)
 
 tree.insert(55)
 tree.insert(66)
 tree.insert(45)
-tree.search(66)
+
+tree.search(55)

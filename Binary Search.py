@@ -17,15 +17,17 @@ def binarySearch(array, search):
     return found
 
 
+# ==================================
 if __name__ == '__main__':
-    arr = [2, 5, 8, 12, 16, 23, 56, 38, 72, 91]
+    arr = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
 
     search = int(input("Enter item to search:"))
+
     pos = binarySearch(arr, search)
-    if pos == False:
+    if not pos:
         print("Value not found")
     else:
-        print("Value found at position %d" % (pos))
+        print("Value found at position %d" % pos)
 
 # ===============
 

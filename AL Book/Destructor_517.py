@@ -13,6 +13,7 @@ class shape:
     def perimeter(self):
         print("Perimeter ", self.__areaValue)
 
+
 myCircle = shape()
 del myCircle
 
@@ -30,5 +31,5 @@ class Employee:
         print('Destructor called, Employee deleted.')
 
 
-obj = Employee()
-del obj
+EmpObj = Employee()
+del EmpObj

@@ -5,7 +5,6 @@ class Employee:
     def __init__(self, first, last):
         self.first = first
         self.last = last
-       # self.email = first + '.' + last + '@outlook.com'
 
     @property
     def email(self):
@@ -29,9 +28,8 @@ class Employee:
 
 emp_1 = Employee('John', 'Smith') 
 emp_1.fullname = 'Salman Khan'  # it will show error messsage unless
-                                  # we need to use
-                                  # @fullname.setter decorators
-emp_2 = Employee('A', 'B')
+                                  # we need to use @fullname.setter decorators
+emp_2 = Employee('Abdul', 'Baten')
 emp_2.fullname = 'Shabab Ahmed'
 
 print(emp_1.first)

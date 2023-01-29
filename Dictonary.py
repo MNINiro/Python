@@ -20,13 +20,13 @@ classmates = {  # 'key' : 'value'
 
 found = False
 
-while found == False:
+while not found:
     name = input('Enter Name:')
-    
+
     for key, val in classmates.items():
         if key == name:
             found = True
             print(key + val)
 
-    # if not found:
-    #     print('Name not found')
+    if not found:
+        print('Name not found')

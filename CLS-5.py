@@ -1,19 +1,25 @@
 lst = [12, 56, 23, 78, 45, 56, 33, 55, 88]
 
-x = len(lst)
+ln = len(lst)
+# print("Length:", ln)
+# print(lst[0])
+# print(lst[1])
+# print(lst[2])
+# print(lst[3])
 
 total = 0
-for i in range(x):
+for i in range(ln):
+    print(i,":", lst[i])
     total = total + lst[i]
-print('Total:', total)
+    print('Total:', total)
 
-print('===========================')
-
-total = 0
-for i in lst:
-    # print(i)
-    total = total + i
-print('Total:', total)
+# print('===========================')
+#
+# total = 0
+# for i in lst:
+#     # print(i)
+#     total = total + i
+# print('Total:', total)
 
 
 

@@ -3,6 +3,8 @@
 # 'x' : use for creating and writing to a new file
 # 'a' : use for appending to a file
 # 'r+' : use for reading and writing to the same file
+# FileHandle.write("Nafi\n")
+#
 
 Txt1 = "1 2 3 4 5 \n"
 Txt2 = "6 7 8 9 10 \n"
@@ -17,37 +19,31 @@ Txt10 = "46 47 48 49 50 \n"
 
 
 def WriteText():
-    name = input("Enter your name:")
-    FileHandle = open("sample.rtf", "w")
-    FileHandle.write(Txt1)
-    FileHandle.write("Nafi\n")
-    FileHandle.write(name)
+    FileHandle = open("d:\sample.txt", "w")
+    # name = input("Enter your name:")
+    # FileHandle.write(name)
+    # FileHandle.write("\n")
+    FileHandle.write(Txt4)
     FileHandle.close()
     return
 
 
+
 def ReadText():
-    FileHandle = open("sample.rtf", "r")
-    # Text = FileHandle.readline()
-    Text = FileHandle.read()
+    FileHandle = open("d:\sample.txt", "r")
+    Text = FileHandle.readline()
+    # Text = FileHandle.read()
     print(Text)
     FileHandle.close()
     return
 
 
 def AppendText():
-    FileHandle = open("sample.rtf", "a")
+    FileHandle = open("d:\sample.txt", "a")
     FileHandle.write("Ifadee\n")
     FileHandle.write("Ayman\n")
-    # FileHandle.write(Txt5)
-    # FileHandle.write(Txt6)
-    # FileHandle.write(Txt7)
-    # FileHandle.write(Txt8)
-    # FileHandle.write(Txt9)
-    # FileHandle.write(Txt10)
     FileHandle.close()
     return
-
 
 def MultiRead():
     FileHandle = open("sample.txt", "r")
@@ -60,8 +56,7 @@ def MultiRead():
     return
 
 
-WriteText()
-# ReadText()
+# WriteText()
 # AppendText()
-##ReadText()
+ReadText()
 # MultiRead()

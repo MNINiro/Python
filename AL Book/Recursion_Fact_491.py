@@ -5,5 +5,6 @@ def factorial(number):
         answer = number * factorial(number - 1)
     return answer
 
-print(factorial(0))
+
+# print(factorial(0))
 print(factorial(5))

@@ -30,9 +30,8 @@ class Employee:
     
     def __mul__(self, other):
         return self.pay * other.pay
-    
-emp_1 = Employee('Corey', 'Schafer', 50000)
-emp_2 = Employee('Test', 'User', 60000)
+emp_1 = Employee('Lamia', 'Hossain', 50000)
+emp_2 = Employee('Yasin', 'Musa', 60000)
 emp_3 = Employee('Basma', 'Islam', 35000)
 
 # It's not a magic/dunder method

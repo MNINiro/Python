@@ -1,8 +1,10 @@
 #Python program for Bubble Sort
-myList = [70,46,43,27,57,41,45,21,14]
+# myList = [70,46,43,27,57,41,45,21,14]
+myList =[5, 1, 4, 2, 8]
 top = len(myList)
 swap = True
-while (swap) or (top > 0):
+
+while (swap) and (top > 0):
     swap = False
     for index in range(top - 1):
         if myList[index] > myList[index + 1]:

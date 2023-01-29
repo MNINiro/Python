@@ -1,11 +1,12 @@
-# def factorial(n):
-#     if n == 0:      # base case
-#         return 1
-#     else:
-#         return n * factorial(n - 1)
-#
-#
-# print(factorial(4000))
+def factorial(n):
+    if n == 0:  # base case
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+print(factorial(5))
+
 
 # ======= Fibonacci=========
 
@@ -20,19 +21,20 @@ def recur_fibo(n):
         # print('n-2 :', n - 2)
         return recur_fibo(n - 1) + recur_fibo(n - 2)
 
-print(recur_fibo(10))
+
+print(recur_fibo(40))
 
 # ========= Calling module ========
-nterms = 10
-
-nterms = int(input("How many terms? "))
-
-# check if the number of terms is valid
-
-if nterms <= 0:
-   print("Plese enter a positive integer")
-else:
-   print("Fibonacci sequence:")
-   for i in range(nterms):
-##      print('Input :',i)
-      print(recur_fibo(i))
+# nterms = 10
+#
+# nterms = int(input("How many terms? "))
+#
+# # check if the number of terms is valid
+#
+# if nterms <= 0:
+#    print("Plese enter a positive integer")
+# else:
+#    print("Fibonacci sequence:")
+#    for i in range(nterms):
+# ##      print('Input :',i)
+#       print(recur_fibo(i))
