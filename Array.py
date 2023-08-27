@@ -15,17 +15,25 @@
 '''
 
 # print('========= example-1 ==========')
-import array as a
-studentRoll = a.array('i', [101, 102, 103, 104, 105])  # 'i' for integer
 
+import array as a
+studentRoll = a.array('i', [101, 102, 103, 104, 105, 106])  # 'i' for integer
+
+# print(studentRoll)
 # print(studentRoll[0])
-# print(studentRoll[1])
-# print(studentRoll[2])
-# print(studentRoll[3])
-# print(studentRoll[4])
+
 
 for i in studentRoll:
     print(i)
+
+print()
+
+for j in range(len(studentRoll)):
+    print(studentRoll[j])
+
+
+# for i in studentRoll:
+#     print(i)
 '''
 # Appending data into an array
 studentRoll.append(555)

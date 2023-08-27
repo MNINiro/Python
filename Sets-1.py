@@ -1,19 +1,64 @@
-mySet = {3, 5, 10, 12, 5, 20}
-# print(mySet)
-for i in mySet:
-    print(i)
-#====================================
+SetA = {3, 5, 10, 12, 5, 20}
+SetB = {3, 5, 10}
+
+# print(len(SetB))
+# print('Union:', SetA.union(SetB))
+
+print('Difference:', SetA.difference(SetB))
+print('Difference:', SetB.difference(SetA))
+print('Intersection:', SetA.intersection(SetB))
+# print(SetA.pop())
+# print(SetB.pop())
+
+print(SetA.issubset(SetB))
+print(SetB.issubset(SetA))
+
+# print(SetA.clear())
+# print(SetA)
+
+SetA.remove(10)
+# print(SetA)
+
+SetA.add(100)
+print(SetA)
+
+
+# print(len(SetB))
+# for i in SetA:
+#     print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ====================================
 
 # x = "A Python Tutorial"
 # print('Tuple: ',tuple(x))
 # print('List: ',list(x))
 # print('Set: ',set(x))
-#====================================
+# ====================================
 # cities = set(("Paris", "Lyon", "London","Berlin","Paris","Birmingham"))
 # NewCities = set(['Paris', 'Birmingham', 'Lyon', 'London', 'Berlin'])
 # print(cities)
 # print(NewCities)
-#=================================
+# =================================
 
 # Adding new value in a set
 # colours = {"red","green"}

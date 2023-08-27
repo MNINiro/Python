@@ -1,2 +1,3 @@
-for i in range(255):
-    print(i,'=',chr(i))
+for i in range(25500):
+    print(i, '=', chr(i))
+

@@ -51,39 +51,36 @@ class Player(object):
         return self.hand.pop()
 
 
-# card = Cards("Clubs", 6)
-# card.show()
-#===========
-print("==All Decks===")
-deck = Deck()
-deck.show()
-
-print()
-print("==After Shuffle ===")
-deck.shuffle()
-deck.show()
-
-print()
-print("==After building cards ===")
-deck.build()
-deck.show()
-
-print()
-print("==After popping ===")
-card = deck.drawCard()
+card = Cards("Clubs", 6)
 card.show()
-
-#=========
-
-rafi = Player("Rafi")
-rafi.draw(deck).draw(deck) #draw(deck) for each card. Here, two cards will be drawn.
-rafi.showHand()
-
-print("==Removing card===")
-
-dis = rafi.discard()
-rafi.showHand()
-
-
-
-
+print(card.suit)
+#===========
+# print("==All Decks===")
+# deck = Deck()
+# deck.show()
+#
+# print()
+# print("==After Shuffle ===")
+# deck.shuffle()
+# deck.show()
+#
+# print()
+# print("==After building cards ===")
+# deck.build()
+# deck.show()
+#
+# print()
+# print("==After popping ===")
+# card = deck.drawCard()
+# card.show()
+#
+# #=========
+#
+# rafi = Player("Rafi")
+# rafi.draw(deck).draw(deck) #draw(deck) for each card. Here, two cards will be drawn.
+# rafi.showHand()
+#
+# print("==Removing card===")
+#
+# dis = rafi.discard()
+# rafi.showHand()

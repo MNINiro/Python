@@ -1,31 +1,20 @@
-# DECLARE A,B as INTEGER
-# A = 100
-# B = 15
-A = int(input('Enter 1st data:'))
-B = int(input('Enter 2nd data:'))
+# number1 = 100    # Assignment
+# number2 = 3
 
-print("1st Data:",A)
-print("2nd Data:",B)
-print()
+number1 = int(input('Enter 1st data:')) #PROMPT
+number2 = float(input('Enter 2nd data:'))
 
-C = A + B
-print("Addition:", C)
-#
-C = A - B
-print('Subtraction:', C)
+result = number1 + number2
+print('Addition:',result)
 
-C = A * B
-print('Multiplication:', C)
+result = number1 - number2
+print('Subtraction:', result)
 
-C = A/B
-print('Real Division:', C)
+result = number1 * number2
+print('Multiplication:',result)
 
-C = A//B
-print('Integer Division:', C)
+result = number1 / number2
+print('Division:', result)
 
-C = A % B
-print('Remainder:', C)
-
-print('Power:', pow(2, 3))
-
-
+result = number1 // number2
+print('Integer Division:', result)

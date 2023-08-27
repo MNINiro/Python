@@ -1,74 +1,13 @@
-# DECLARE a as string
-
-# a = ""
-# b = 0
-# c = 0.0
-# d = True
-# e = []
-# f= ()
-# g = {}
-# print(type(a))
-# print(type(b))
-# print(type(c))
-# print(type(d))
-# print(type(e))
-# print(type(f))
-# print(type(g))
+# Control Structure
+# d1 = 50
+# d2 = 100
+# d3 = 750
 #
-# print(type(a + str(c)))
-# print(a + str(c))
-
-# Selection
-# x = 150      #Assign
-# y = 100
-#
-# if x > y:                           #boolen operator.
-#    print(x, "is greater than", y)   # if condition is true
+# if (d1 > d2) and (d1 > d3):
+#     print(d1, "is the greatest")
+# elif (d2 > d1) and (d2 > d3):
+#     print(d2, "is the greatest")
 # else:
-#    print(y, "is greater than", x)   # if condition is false
-
-#Example
-A = 400
-B = 300
-C = 400
-
-if (A > B) and (A > C):
-    print(A, "is the greatest a")
-elif (B > A) and (B > C):
-    print(B, "is the greatest b")
-else:
-    print(C, "is the greatest c")
-
-#Alternate way
-# if A>B>C:
-#     print(A)
-# elif B>A>C:
-#     print(B)
-# else:
-#     print(C)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#     print(d3, "is the greatest")
 
 

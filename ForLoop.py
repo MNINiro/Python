@@ -1,19 +1,23 @@
 #def sample():
 
-L=[1,4,2,6,7,9,10]
-M=[]
+for x in range(10):
+     print(x * 2)
+
+
+# L=[1,4,2,6,7,9,10]
+# M=[]
 
 # for i in range(7):
 #      # M.append(2*2-1)
 #      print(L[i])
 # print()
 
-for i in L:
-     x = int(input("Enter a number:"))
-     if x in L:
-          print("Found in", L.index(x))
-     else:
-          print("Not found")
+# for i in L:
+#      x = int(input("Enter a number:"))
+#      if x in L:
+#           print("Found in", L.index(x))
+#      else:
+#           print("Not found")
 
 # ============================
 

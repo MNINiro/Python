@@ -13,12 +13,14 @@ class person:
         print (self.A)
         print (self.__B) # Invoke private variable in class
         print (self.A + self.__B)
-        
+
 p = person()
 
 print(p.A)    # Access public variable out of class, succeed
-##print(p.__B) # Access private variable out of class, fail
+# print(p.__B) # Access private variable out of class, fail
 
 print(p.printName()) #  Access public function but this function access
-                     #  Private variable __B successfully since 
+                      # Private variable __B successfully since
                      #  they are in the same class.
+
+
